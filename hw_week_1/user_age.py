@@ -1,4 +1,3 @@
-#age = int(input('insert your age: '))
 def user_age(age):
     if age   <= 7:
         return ('Пользователь ходит в детский сад')
@@ -9,9 +8,6 @@ def user_age(age):
     else:
         return ('Пользователь работает')
 
-#user = user_age
-
 x = user_age(abs(int(input('Введите возраст: '))))
-
 
 print (x)

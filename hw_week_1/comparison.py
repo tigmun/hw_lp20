@@ -12,11 +12,3 @@ def comparison (f_name, s_name):
     elif f_name != s_name and s_name == 'learn':
         print('3')
 z = comparison(x,y)
-'''
-a = ''
-
-while not a.isnumeric():
-    if a != '':
-        print(f'{a} is not a number')
-    a = input("Enter a number: ")
-    '''
