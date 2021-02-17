@@ -2,8 +2,8 @@
 #Примеры из лекции
 x = 1
 while x < 5:
-	print(x)
-	x += 1
+    print(x)
+    x += 1
 
 
 while True:
@@ -19,10 +19,15 @@ while True:
 #Напишите функцию hello_user(), которая с помощью функции
 #input() спрашивает пользователя “Как дела?”, пока он не ответит “Хорошо”
 
-while True:
-	user_input = input('Как дела? ')
-	if user_input == 'Хорошо':
-		break
+
+def hello_user():
+    
+    while True:
+        user_input = input('Как дела? ')
+        if user_input == 'Хорошо':
+            break
+if __name__ == '__main__':
+    hello_user()
 
 
 #Задание 2
@@ -40,10 +45,13 @@ dialog = {
         "Сложные задания?":"Наверно нет, просто надо приноровиться искать, думать и, в итоге, решать"
         }
 
-ask_user = input('Введите ваш вопрос: ')
+def ask_user ():
+    ask_user = input('Введите ваш вопрос: ')
+    for ask in dialog:
+        if ask_user in dialog:
+            answer = dialog.get(ask_user)
+            print (answer)
+        break
 
-for ask in dialog:
-    if ask_user in dialog:
-        answer = dialog.get(ask_user)
-        print (answer)
-    break
+if __name__ == '__main__':
+    ask_user()
